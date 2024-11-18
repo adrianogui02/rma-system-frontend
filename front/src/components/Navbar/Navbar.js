@@ -15,7 +15,7 @@ const Navbar = () => {
   useEffect(() => {
     if (user) {
       if (user.role === "user" && location.pathname === "/dashboard") {
-        navigate("/products");
+        navigate("/");
       } else if (user.role === "admin" && location.pathname === "/products") {
         navigate("/dashboard");
       }
