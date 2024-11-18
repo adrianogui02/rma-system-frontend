@@ -48,11 +48,6 @@ const Navbar = () => {
                     Dashboard
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/rma">
-                    Orders
-                  </Link>
-                </li>
               </>
             )}
             {user && user.role === "user" && (
@@ -64,7 +59,7 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/rma">
-                    Orders
+                    Solicitações
                   </Link>
                 </li>
               </>
